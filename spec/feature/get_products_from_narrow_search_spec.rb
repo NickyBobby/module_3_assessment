@@ -10,6 +10,7 @@ RSpec.feature "get search results from narrow query" do
     expect(current_path).to eq "/search"
 
     # expect(page).to have_selector('.result', count: 3)
+    save_and_open_page
     expect(page).to have_content "Sku: 9068155"
     expect(page).to have_content "Sku: 9068004"
     expect(page).to have_content "Sku: 9068128"
