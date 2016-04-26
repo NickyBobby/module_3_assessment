@@ -11,9 +11,9 @@ RSpec.feature "hit best buy api and return product information" do
 
     expect(page).to have_selector('.result', count: 15)
 
-    # expect(page).to have_content "sku"
-    # expect(page).to have_content "name"
-    # expect(page).to have_content "customer average review"
+    expect(page).to have_content("Sku", count: 15)
+    expect(page).to have_content("Name", count: 15)
+    # expect(page).to have_content("Customer average review", count: 15)
     # expect(page).to have_content "short description"
     # expect(page).to have_content "sale price"
     # expect(page).to have_content "image"
