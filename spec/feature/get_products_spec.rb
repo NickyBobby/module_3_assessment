@@ -9,7 +9,6 @@ RSpec.feature "hit best buy api and return product information" do
 
     expect(current_path).to eq '/search'
 
-    # save_and_open_page
     expect(page).to have_selector('.result', count: 15)
 
     # expect(page).to have_content "sku"
