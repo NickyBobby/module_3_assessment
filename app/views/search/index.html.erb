@@ -1,0 +1,10 @@
+<% @products.each do |product| %>
+<div class="result">
+  <h3>Sku: <%= product['sku'] %> </h3>
+  <h3>Name: <%= product['name'] %> </h3>
+  <h3>Customer Review Average: <%= product['customerReviewAverage'] %> </h3>
+  <h3>Short Description: <%= product['shortDescription'] %> </h3>
+  <h3>Sale Price: <%= product['salePrice'] %> </h3>
+  <h3>image url: <%= product['image'] %> </h3>
+</div>
+<% end %>
